@@ -20,20 +20,20 @@ library(raster)
 #---------------change directory to where you saved the data----------------
 #LatLong
 #used in leaflet map
-Pumpbnd <-readOGR("C:/aajk/ppt/classtalks/ent597/final/snow/Pumpbndll.shp", layer = "Pumpbndll", GDAL1_integer64_policy = FALSE)
-pumpsllcsv <- read.csv("C:/aajk/ppt/classtalks/ent597/final/snow/pumpsll.csv", header=TRUE,sep=",")
+Pumpbnd <-readOGR("C:/Pumpbndll.shp", layer = "Pumpbndll", GDAL1_integer64_policy = FALSE)
+pumpsllcsv <- read.csv("C:/pumpsll.csv", header=TRUE,sep=",")
 attach(pumpsllcsv)
-choleradeath <- read.csv("C:/aajk/ppt/classtalks/ent597/final/snow/choleradeathspumps_ll.csv", header=TRUE,sep=",")
+choleradeath <- read.csv("C:/choleradeathspumps_ll.csv", header=TRUE,sep=",")
 attach(choleradeath)
 
 #projected 
-choleradeathprj2 <- read.csv("C:/aajk/ppt/classtalks/ent597/final/snow/Choleradeaths2prj.csv", header=TRUE,sep=",")
+choleradeathprj2 <- read.csv("C:/Choleradeaths2prj.csv", header=TRUE,sep=",")
 attach(choleradeathprj2)
 
 #used for distancebased analysis
-studybndprj <-readOGR("C:/aajk/ppt/classtalks/ent597/final/snow/StudyareaBnd.shp", layer = "StudyareaBnd", GDAL1_integer64_policy = FALSE)
-Pumpbndprj <-readOGR("C:/aajk/ppt/classtalks/ent597/final/snow/Pumpsbnd_prj.shp", layer = "Pumpsbnd_prj", GDAL1_integer64_policy = FALSE)
-choleraroadshpprj <-readOGR("C:/aajk/ppt/classtalks/ent597/final/snow/cholera_roadsprj.shp", layer = "cholera_roadsprj", GDAL1_integer64_policy = FALSE)
+studybndprj <-readOGR("C:/StudyareaBnd.shp", layer = "StudyareaBnd", GDAL1_integer64_policy = FALSE)
+Pumpbndprj <-readOGR("C:/Pumpsbnd_prj.shp", layer = "Pumpsbnd_prj", GDAL1_integer64_policy = FALSE)
+choleraroadshpprj <-readOGR("C:/cholera_roadsprj.shp", layer = "cholera_roadsprj", GDAL1_integer64_policy = FALSE)
 
 #------------------------------------------------------------------------
 
